@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #001219;
+  color: #e9d8a6;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header__container {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.header__lang {
+  padding-right: 15px;
+}
+
+.header__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__control img {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  -webkit-filter: invert(18%) sepia(78%) saturate(2589%) hue-rotate(171deg) brightness(96%) contrast(102%);
+          filter: invert(18%) sepia(78%) saturate(2589%) hue-rotate(171deg) brightness(96%) contrast(102%);
+}
+
+.header__control img:hover {
+  -webkit-transition: -webkit-filter ease-out 100ms;
+  transition: -webkit-filter ease-out 100ms;
+  transition: filter ease-out 100ms;
+  transition: filter ease-out 100ms, -webkit-filter ease-out 100ms;
+  -webkit-filter: invert(69%) sepia(40%) saturate(5566%) hue-rotate(8deg) brightness(102%) contrast(101%);
+          filter: invert(69%) sepia(40%) saturate(5566%) hue-rotate(8deg) brightness(102%) contrast(101%);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__img {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: beige;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.content__img img {
+  height: 400px;
+}
+
+.content__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.content__button {
+  cursor: pointer;
+  background-color: #0a9396;
+  border: none;
+  color: #e9d8a6;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.content__quote {
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.content__author {
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  color: #ee9b00;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.footer__item {
+  width: 135px;
+  -webkit-filter: invert(96%) sepia(0%) saturate(38%) hue-rotate(139deg) brightness(96%) contrast(77%);
+          filter: invert(96%) sepia(0%) saturate(38%) hue-rotate(139deg) brightness(96%) contrast(77%);
+}
+
+.footer__item-year {
+  text-align: center;
+}
+
+.footer__item a img {
+  height: 50px;
+  -webkit-filter: invert(96%) sepia(0%) saturate(38%) hue-rotate(139deg) brightness(96%) contrast(77%);
+          filter: invert(96%) sepia(0%) saturate(38%) hue-rotate(139deg) brightness(96%) contrast(77%);
+}
+
+.github a img {
+  height: 50px;
+}
+
+.footer__container {
+  max-width: 1280px;
+  margin: 20px auto;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-light {
+  background: #ffe8d6;
+  color: #a5a58d;
+}
+
+.header__logo-light {
+  color: #6b705c;
+}
+
+.header__control-light img {
+  -webkit-filter: invert(74%) sepia(42%) saturate(408%) hue-rotate(330deg) brightness(83%) contrast(89%);
+          filter: invert(74%) sepia(42%) saturate(408%) hue-rotate(330deg) brightness(83%) contrast(89%);
+}
+
+.header__control-light img:hover {
+  -webkit-transition: -webkit-filter ease-out 100ms;
+  transition: -webkit-filter ease-out 100ms;
+  transition: filter ease-out 100ms;
+  transition: filter ease-out 100ms, -webkit-filter ease-out 100ms;
+  -webkit-filter: invert(84%) sepia(6%) saturate(856%) hue-rotate(21deg) brightness(80%) contrast(78%);
+          filter: invert(84%) sepia(6%) saturate(856%) hue-rotate(21deg) brightness(80%) contrast(78%);
+}
+
+.content__img-light {
+  background-color: #6b705c;
+}
+
+.content__button-light {
+  background-color: #a5a58d;
+  color: #e9d8a6;
+}
+
+.content__author-light {
+  color: #cb997e;
+}
+/*# sourceMappingURL=style.css.map */
